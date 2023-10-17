@@ -6,11 +6,6 @@ pipeline {
                 deleteDir()
             }
         }
-        stage('Example') {
-            steps {
-                sh "git clone https://github.com/274280/practise.git"
-            }
-        }
         stage("build") {
             steps{
                 dir(practise) {
