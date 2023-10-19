@@ -8,7 +8,7 @@ pipeline {
         }
         stage("build") {
             steps{
-                scripts { 
+                script { 
                     sh "git clone https://github.com/274280/practise.git"
                     sh "c++ hello_world.cpp"
                     sh "./a.out"   
